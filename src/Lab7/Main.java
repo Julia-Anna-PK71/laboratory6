@@ -22,22 +22,26 @@ public class Main {
         OurKnight.add(new Helmet (17, 5, 3540));
         OurKnight.add(new ChainMail(10, 10, 4470));
         OurKnight.add(new Leggings(40, 12, 6594));
-        OurKnight.add(new Cuirass(53, 20, 6061));
-        OurKnight.add(new Helmet (17, 5, 3540));
+        Cuirass cuirass = new Cuirass(53, 20, 6061);
+        OurKnight.add(cuirass);
+        Helmet helmet = new Helmet(17, 5, 3540);
+        OurKnight.add(helmet);
         OurKnight.add(new ChainMail(10, 10, 4470));
         OurKnight.add(new Leggings(40, 12, 6594));
         OurKnight.add(new Cuirass(53, 20, 6061));
         OurKnight.add(new Helmet (17, 5, 3540));
-        OurKnight.add(new ChainMail(10, 10, 4470));
-        OurKnight.add(new Leggings(40, 12, 6594));
-        OurKnight.add(new Cuirass(53, 20, 6061));
+
+
 
         Iterator<Knight> iterator = OurKnight.iterator();
         System.out.println("*" + OurKnight.isEmpty());
+        // isEmpty (): возвращает true, если коллекция пуста, иначе возвращает false
         System.out.println("**" + OurKnight.size());
-        System.out.println("***" + OurKnight.contains(new Leggings(40, 12, 6594)));
+        System.out.println("***" + OurKnight.contains(helmet));
+        //contains (Object item): возвращает true, если объект item содержится в коллекции, иначе возвращает false
         OurKnight.remove(new Cuirass(53, 20, 6061));
-        System.out.println("****" + OurKnight.remove((new Cuirass(53, 20, 6061))));
+        System.out.println("****" + OurKnight.remove(cuirass));
+        //remove (Object item): возвращает true, если объект item удачно удален из коллекции, иначе возвращается false
 
 
         int x = 0;

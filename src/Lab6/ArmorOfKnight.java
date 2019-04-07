@@ -9,18 +9,17 @@ public class ArmorOfKnight {
     private int sum;
 
     public ArmorOfKnight(int size) {
-        knight = new Knight[size];
-
+        knight = new Knight[size]; // создание масива размерностью size
     }
 
     public void SortedDamage() {
 
-        Arrays.sort(knight, Comparator.comparing(Knight::getDamage));
-
+        Arrays.sort(knight, Comparator.comparing(Knight::getDamage));// сортируем доспехи по урону
     }
 
     @Override
-    public String toString() {
+    public String toString() { //toString(): возвращает строковый объект, представляющий значение этого целого числа
+
         return Arrays.toString(knight);
     }
 
@@ -38,9 +37,7 @@ public class ArmorOfKnight {
     }
 
     public void add(Knight knight) {
-        if (count< this.knight.length) {
             this.knight[count++] = knight;
-        }
 
     }
     public void SumCost() {
