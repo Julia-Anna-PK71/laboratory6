@@ -5,14 +5,24 @@ import  Lab8.WrongDamageException;
 import org.junit.Test;
 
 public class TestArmor {
+    public void Print (){
+        System.out.println();
+    }
     @Test (expected = WrongDamageException.class)
-    public void  testDamage () throws WrongCostExeption, WrongWeightException, WrongDamageException{
-        Knight knight = new Helmet(1,6,3540);
+    public void  testDamage ()
+            throws  WrongDamageException{
+        Knight knight = new Helmet(7,6,3540);
+            throw new WrongDamageException("Wrong Damage");
     }
 
     @Test (expected = WrongCostExeption.class)
-    public void  testCost () throws WrongCostExeption, WrongWeightException, WrongDamageException{
+    public void  testCost () throws WrongCostExeption {
         Knight knight = new Helmet(7,7,-5540);
+        throw new WrongCostExeption("Wrong cost");
+
     }
 
+
 }
+
+
