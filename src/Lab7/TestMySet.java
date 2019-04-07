@@ -53,9 +53,9 @@ public class TestMySet extends Assert {
     }
 
     @Test
-    public void testContainsClassCastException() {
-        boolean b = mySet.contains(1 );
-        System.out.println(b);
+    public void testContainsClassException() {
+        boolean b = mySet.contains(1);
+        System.out.println("Class  " + b);
     }
 }
 
