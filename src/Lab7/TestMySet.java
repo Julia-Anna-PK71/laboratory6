@@ -23,16 +23,17 @@ public class TestMySet extends Assert {
         assertEquals(0, mySet.size());
     }
 
-   /* @Test(expected = WrongDamageException.class)
+    @Test(expected = WrongDamageException.class)
     public void testAddWithException()
             throws WrongCostExeption, WrongWeightException, WrongDamageException {
         Knight knight = new Helmet(7,7,-5540);
-       *//* try {
+       /* try {
             mySet.add(new  Helmet (-17, 5, 3540));
         } catch (WrongDamageException e) {
             System.out.println(e.getMessage());
-        }*//*
-    }*/
+        }*/
+             throw new WrongDamageException("Error add");
+    }
 
     @Test
     public void testAdd()

@@ -22,6 +22,14 @@ public class TestArmor {
 
     }
 
+    @Test (expected = WrongWeightException.class)
+    public void  testWeight () throws WrongWeightException {
+        Knight knight = new Helmet(7,7,-5540);
+        throw new WrongWeightException("Wrong cost");
+
+    }
+
+
 
 }
 
