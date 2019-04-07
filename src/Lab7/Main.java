@@ -34,24 +34,24 @@ public class Main {
 
 
         Iterator<Knight> iterator = OurKnight.iterator();
-        System.out.println("*" + OurKnight.isEmpty());
+        System.out.println("Empty? " + OurKnight.isEmpty());
         // isEmpty (): возвращает true, если коллекция пуста, иначе возвращает false
-        System.out.println("**" + OurKnight.size());
-        System.out.println("***" + OurKnight.contains(helmet));
+        System.out.println("Size =" + OurKnight.size());
+        System.out.println("Contain element :" + OurKnight.contains(helmet));
         //contains (Object item): возвращает true, если объект item содержится в коллекции, иначе возвращает false
         OurKnight.remove(new Cuirass(53, 20, 6061));
-        System.out.println("****" + OurKnight.remove(cuirass));
+        System.out.println("Remove element : " + OurKnight.remove(cuirass));
         //remove (Object item): возвращает true, если объект item удачно удален из коллекции, иначе возвращается false
 
 
         int x = 0;
         for (Knight Knight : OurKnight) {
-            System.out.println("*****" + iterator.next());
+            System.out.println("element #" + x + " " + iterator.next());
             x++;
         }
 
-        System.out.println("+++++++" + x);
-        System.out.println("*********" + OurKnight.containsAll(OurKnight));
+        System.out.println("New Size +" + x);
+        System.out.println(" Contains all elements  :" + OurKnight.containsAll(OurKnight));
     }
 }
 
