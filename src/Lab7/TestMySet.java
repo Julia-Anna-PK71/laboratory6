@@ -54,7 +54,13 @@ public class TestMySet extends Assert {
 
     @Test
     public void testContainsClassException() {
-        boolean b = mySet.contains(1);
+        Knight knight;
+        knight = new Helmet (17, 5, 3540);
+        mySet.add(knight);
+
+        knight = new Cuirass(53, 20, 6061);
+        mySet.add(knight);
+        boolean b = mySet.contains(knight);
         System.out.println("Class  " + b);
     }
 }
