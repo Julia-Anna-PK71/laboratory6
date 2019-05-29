@@ -1,0 +1,2 @@
+Lab6.ChainMail Damage:15,Weight:20,Cost:300000
+Lab6.ChainMail Damage:4,Weight:8,Cost:230000
